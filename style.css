@@ -1,0 +1,101 @@
+.wrapper {
+position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+color: white;
+font-family: "Courier New",
+Courier, Monaco, sans-serif;
+font-size: 12px;
+}
+
+html {
+  height: 100%;
+  background: black url(images/bg.gif) center no-repeat;
+  background-size: cover;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 10px;
+}
+
+.header {
+  margin-bottom: 70px;
+}
+
+/* ФУТЕР */
+
+.footer {
+  margin-top: 30px;
+}
+
+.main a:hover {
+  color: white;
+  background-color: red;
+}
+.main a {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+.footer a {
+  display: inline-block;
+  padding-right: 5px;
+  opacity: 0.3;
+}
+
+.footer a:hover {
+  opacity: 1;
+}
+
+.footer a img{
+  max-width: 15px;
+}
+
+/* СТИЛИ ДЛЯ 5го АЙФОНА */
+@media screen and (max-width:320px){
+  .header {
+    margin-top: 60px;
+  }
+  body {
+    max-width: 200px;
+  }}
+@keyframes fadein {
+  from {
+    opacity: 0;
+}
+to {
+  opacity: 1;
+}
+}
+.container {
+  animation: fadein 1.5s forwards;
+}
+.filler {
+  position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: black;
+  animation: fadeout 1s forwards;
+}
+div {
+  display: block;
+}
+.wrapper {
+position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+color: white;
+font-family: "Courier New",
+Courier, Monaco, sans-serif;
+font-size: 12px;
+}
